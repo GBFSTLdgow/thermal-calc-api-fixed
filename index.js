@@ -70,6 +70,9 @@ app.post('/calculate', (req, res) => {
   return res.json({ RTotal: +RTotal.toFixed(2), UValue, codeMaxU, compliance, margin, condensationRisk, recommendations });
 });
 
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-  console.log(`Thermal calc API running at http://localhost:${PORT}`);
+  console.log(`✅ Thermal calc API is running on port ${PORT}`);
 });
+
