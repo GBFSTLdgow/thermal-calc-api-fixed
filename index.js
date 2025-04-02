@@ -5,6 +5,9 @@ const cors = require('cors');
 
 
 const app = express();
+app.get("/", (req, res) => {
+  res.send("✅ API is running!");
+});
 app.use(cors()); 
 app.use(bodyParser.json());
 const PORT = 3000;
