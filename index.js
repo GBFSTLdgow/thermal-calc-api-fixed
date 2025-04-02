@@ -11,7 +11,6 @@ app.get("/", (req, res) => {
 });
 app.use(cors()); 
 app.use(bodyParser.json());
-const PORT = 3000;
 
 // --- Material Thermal Conductivity Database (k in Btu·in/hr·ft²·°F) ---
 const materialDB = {
